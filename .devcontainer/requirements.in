@@ -1,0 +1,7 @@
+jupyter
+black[jupyter]
+umap-learn
+numpy
+scipy
+matplotlib
+seaborn

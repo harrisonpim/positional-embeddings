@@ -1,21 +1,15 @@
 {
-  "name": "Positional embeddings demo",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "extensions": ["ms-python.python", "ms-toolsai.jupyter", "GitHub.copilot"],
-  "overrideCommand": false,
-  "remoteUser": "jovyan",
-  "forwardPorts": [8888],
-  "portsAttributes": {
-    "8888": {
-      "label": "Jupyter",
-      "requireLocalPort": true,
-      "onAutoForward": "ignore"
-    }
-  },
+  "extensions": [
+    "GitHub.copilot",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap"
+  ],
   "settings": {
-    "python.defaultInterpreterPath": "/opt/conda/bin/python"
-  },
-  "runArgs": ["--env-file=.devcontainer/.env"]
+    "python.formatting.provider": "black"
+  }
 }
